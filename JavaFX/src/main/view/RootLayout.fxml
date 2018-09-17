@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.RootLayoutController">
+   <top>
+      <MenuBar stylesheets="@style.css" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opcije">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNew" text="Novi unosi" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Otvori postojece korisnike" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Spremi korisnike" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Spremi korisnike kao..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Zatvori program" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="O programu" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
